@@ -1,27 +1,25 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ headerTextColor = "#fff" }) => {
   return (
-    <div className='header-sec'>
-      <section className='container'>
-        <div className='header-tabs row d-flex justify-content-between' >
-          <div className="col-12 col-md-7 col-lg-8">
+    <div className="header-sec" style={{ color: headerTextColor }}>
+      <section className="container">
+        <div className="header-tabs row d-flex justify-content-between">
+          <Link to="/" className="col-12 col-md-7 col-lg-8">
             Eventos desportivos de Penacova
-          </div>
+          </Link>
           <div className="d-flex col-12 col-md-5 col-lg-4 justify-content-between">
+            <Link to="/eventos">Eventos</Link>
+            <span>Sobre</span>
+            <div
+              className="vertical-line"
+              style={{ borderColor: headerTextColor }}
+            />
             <span>
-              Eventos
+              <i className="fa fa-shopping-cart" aria-hidden="true" />
             </span>
-            <span>
-              Sobre
-            </span>
-            <div className='vertical-line'></div>
-            <span>
-              <i className="fa fa-shopping-cart" aria-hidden="true"></i>
-            </span>
-            <span>
-              Iniciar sessão
-            </span>
+            <span>Iniciar sessão</span>
           </div>
         </div>
       </section>

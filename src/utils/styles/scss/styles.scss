@@ -75,6 +75,13 @@
   color: white;
   padding: 30px 0px;
   z-index: 99;
+  & a{
+    text-decoration: none;
+    color: inherit;
+    &:hover{
+      color:  inherit;
+    }
+  }
 }
 .banner {
   height: 500px;
@@ -102,9 +109,11 @@
 }
 .heading-with-line-white {
   border-color: white;
+  color: white;
 }
 .heading-with-line-gray {
   border-color: $light-gray;
+  color: $light-gray;
 }
 .heading-with-line-white, .heading-with-line-gray {
   overflow: hidden;

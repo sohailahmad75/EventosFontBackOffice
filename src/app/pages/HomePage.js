@@ -10,12 +10,16 @@ const HomePage = () => {
   // const subHeading = `<div>No results.<br />Please try another search term.</div> `
   return (
     <div>
-      <Header/>
-      <Banner bannerImage={'media/home-banner.png'} subHeading={'Não corremos pela chegada. \n Corremos pela jornada.'} mainHeading={'O que nos move'}/>
-      <ProximosEvento/>
-      <QueOferecemosBanner/>
-      <SabroNos/>
-      <Footer/>
+      <Header />
+      <Banner
+        bannerImage={"media/home-banner.png"}
+        subHeading={"Não corremos pela chegada. \n Corremos pela jornada."}
+        mainHeading={"O que nos move"}
+      />
+      <ProximosEvento />
+      <QueOferecemosBanner />
+      <SabroNos />
+      <Footer />
     </div>
   );
 };

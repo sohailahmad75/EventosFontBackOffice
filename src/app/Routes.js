@@ -4,6 +4,7 @@ import UserProfile from "./pages/UserProfile";
 const Login = lazy(() => import("./pages/Login")) ;
 const HomePage = lazy(() => import("./pages/HomePage")) ;
 const Register = lazy(() => import("./pages/Register")) ;
+const Eventos = lazy(() => import("./pages/Eventos")) ;
 const Routes = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
@@ -12,6 +13,7 @@ const Routes = () => {
         <Route path="/login" component={Login} exact />
         <Route path="/register" component={Register} exact />
         <Route path="/userprofile" component={UserProfile} exact />
+        <Route path="/eventos" component={Eventos} exact />
         {/*<Route path="/home" component={HomePage} exact />*/}
         {/*<Redirect to="/" />*/}
       </Switch>
