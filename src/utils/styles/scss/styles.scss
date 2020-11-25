@@ -41,6 +41,18 @@
       width: 60%;
     }
   }
+  .user-info-input {
+    background-color: #f3f3f3;
+    border-radius: 3px;
+    margin: 0px 2px;
+    input {
+      border: none;
+      background: transparent;
+      padding: 0px;
+      font-size: small;
+      color: black;
+    }
+  }
     @media only screen and (max-width: 768px) {
         .theme-button {
             width: 100%;
@@ -87,7 +99,6 @@
     }
   }
 }
-
 @media only screen and (max-width: 1200px) {
   .display-1 {
     font-size: 3rem;
