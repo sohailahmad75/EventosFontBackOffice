@@ -1,0 +1,63 @@
+@import "utils/styles/scss/variables";
+@import "utils/styles/scss/mixins";
+@import "~bootstrap/scss/bootstrap";
+@import '~font-awesome/css/font-awesome.min.css';
+@import "utils/styles/scss/styles.scss";
+//@font-face {
+//  font-family: TTNorms-Regular;
+//  src: url(../public/fonts/TTNorms-Regular.otf);
+//}
+//@font-face {
+//  font-family: TTNorms-Light;
+//  src: url(../public/fonts/TTNorms-Light.otf);
+//}
+//@font-face {
+//  font-family: TTNorms-Bold;
+//  src: url(../public/fonts/TTNorms-Bold.otf);
+//}
+html, body {
+  margin: 0;
+  font-family: 'TTNorms-Regular', 'TTNorms-Light', 'TTNorms-Bold', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $body-color;
+  color: black;
+}
+.theme-button {
+  background-color: black;
+  color: white;
+  border-radius: 0px;
+  font-weight: bold;
+  font-size: 12px;
+  width: 220px;
+  text-transform: uppercase;
+  padding: 6px;
+}
+.form-group {
+  input {
+    border: none;
+    font-size: 14px;
+    padding: 25px 15px;
+    &:focus {
+      border-color: #838383;
+      box-shadow: inset 0 1px 1px rgba(150, 150, 150, 0.1), 0 0 5px rgba(130, 130, 130, 0.2);
+    }
+  }
+}
+a {
+  color: black;
+  &:hover {
+    color: black;
+  }
+}
+.btn {
+  border-radius: 0px;
+}
+.card {
+  border: none;
+  border-radius: 0px;
+  box-shadow: 0px 0px 2px 0px #9b9b9b;
+  .card-img-top {
+    border-radius: 0px;
+  }
+}
