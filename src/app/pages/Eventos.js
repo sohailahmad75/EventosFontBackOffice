@@ -14,6 +14,7 @@ const Eventos = () => {
         subHeading={"Vamos relembrar o passado e motivar o futuro."}
         mainHeading={"Eventos"}
         mainHeadingColor={"#0D0E0E"}
+        subHeadingColor={"#0D0E0E"}
       />
       <EventosTabs />
       <EventoProximos />

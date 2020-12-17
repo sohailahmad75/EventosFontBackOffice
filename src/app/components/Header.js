@@ -11,7 +11,7 @@ const Header = ({ headerTextColor = "#fff" }) => {
           </Link>
           <div className="d-flex col-12 col-md-5 col-lg-4 justify-content-between">
             <Link to="/eventos">Eventos</Link>
-            <span>Sobre</span>
+            <Link to="/sobre">Sobre</Link>
             <div
               className="vertical-line"
               style={{ borderColor: headerTextColor }}
