@@ -20,7 +20,7 @@ const SabroNos = () => {
                 Barragem da Aguieira existe um cenário perfeito para a prática
                 da Pesca.
               </div>
-              <button className="btn btn-primary m-4 btn-sm font-weight-bold">
+              <button className="btn btn-warning m-4 btn-sm font-weight-bold">
                 Ver os nossos eventos
               </button>
             </div>

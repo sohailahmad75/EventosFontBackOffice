@@ -161,6 +161,8 @@
 
 .home-page {
   .btn-app-link {
-    border: 3px solid gray;
+    &:hover{
+      opacity: 0.8;
+    }
   }
 }
