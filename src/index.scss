@@ -26,11 +26,10 @@ html, body {
 .theme-button {
   background-color: black;
   color: white;
-  border-radius: 0px;
+  border-radius: 10px;
   font-weight: bold;
   font-size: 12px;
   width: 220px;
-  text-transform: uppercase;
   padding: 6px;
 }
 .form-group {
@@ -49,9 +48,6 @@ a {
   &:hover {
     color: black;
   }
-}
-.btn {
-  border-radius: 0px;
 }
 .card {
   border: none;
