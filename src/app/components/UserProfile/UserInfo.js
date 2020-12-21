@@ -11,7 +11,7 @@ const UserInfo = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-3 d-flex justify-content-center">
+          <div className="col-12 col-md-3 d-flex justify-content-center">
             <div>
               <h4>Informações</h4>
               <div>
@@ -24,9 +24,9 @@ const UserInfo = () => {
               </div>
             </div>
           </div>
-          <div className="col-7">
+          <div className="col-12 col-md-7 ">
             <div className="row">
-              <div className="col-6">
+              <div className="col-12 order-2 order-md-1 col-md-6">
                 <div className="sub-sec mb-5">
                   <div className="heading-underline pb-2 mb-3 pl-2">
                     Dados de acesso
@@ -158,7 +158,9 @@ const UserInfo = () => {
                   <div className="container pb-2">
                     <div className="row pt-3 pb-2 px-1 mb-3 user-info-input align-items-center">
                       <div className="col-12">
-                        <div className="text-muted mb-1">Número de federado</div>
+                        <div className="text-muted mb-1">
+                          Número de federado
+                        </div>
                         <input
                           type="text"
                           className="form-control"
@@ -169,16 +171,28 @@ const UserInfo = () => {
                   </div>
                 </div>
                 <div className="d-flex">
-                       <button className='btn btn-warning  btn-sm m-1 w-50 font-weight-bold text-uppercase'>Confirmar</button>
-                  <button className='btn btn-dark btn-sm m-1 w-50 font-weight-bold text-uppercase'>Cancelar</button>
+                  <button className="btn btn-warning  btn-sm m-1 w-50 font-weight-bold text-uppercase">
+                    Confirmar
+                  </button>
+                  <button className="btn btn-dark btn-sm m-1 w-50 font-weight-bold text-uppercase">
+                    Cancelar
+                  </button>
                 </div>
               </div>
-              <div className="col-6">
-                <div className="text-muted ml-5">
+              <div className="col-12 col-md-6 order-1 order-md-2">
+                <div className="text-muted ml-md-5 ml-0 mb-5">
                   <div className="heading-underline pb-2 mb-3 pl-2">Imagem</div>
                   <div className="user-profile-img">
                     <img src="media/user-profile.png" alt="User Image" />
                   </div>
+                  <button
+                    style={{ cursor: "pointer" }}
+                    className="btn btn-light-gray w-100  p-3 mt-3 font-weight-bold d-flex justify-content-between text-uppercase file-btn"
+                  >
+                    <span>Foto de prefil </span>
+                    <input type="file" name="file" />
+                    <img src="/media/publish_icon.png" alt="upload icon" />
+                  </button>
                 </div>
               </div>
             </div>

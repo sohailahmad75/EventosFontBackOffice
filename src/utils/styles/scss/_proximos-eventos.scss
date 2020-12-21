@@ -1,0 +1,25 @@
+.proximos-main-container{
+  background: $success;
+  color: #fff;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 0 0 100px 0;
+  h1{
+    padding: 60px;
+    margin: 0;
+  }
+}
+.proximos-card-container{
+  display: grid;
+  grid-template-columns: repeat(6, 275px);
+  grid-auto-flow:column;
+  grid-column-gap: 90px;
+  color: $text-dark;
+  margin-left: -100px;
+}
+.card-description{
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

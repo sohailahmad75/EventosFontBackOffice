@@ -132,3 +132,37 @@
 .footer-container {
   line-height: 35px;
 }
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.btn-light-gray {
+  color: $light-gray;
+  background-color: $island-white;
+  &:hover {
+    color: $light-gray;
+  }
+}
+.file-btn {
+  position: relative!important;
+  overflow: hidden;
+  input {
+    position: absolute;
+    font-size: 50px;
+    opacity: 0;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+  }
+}
+
+.home-page {
+  .btn-app-link {
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+}

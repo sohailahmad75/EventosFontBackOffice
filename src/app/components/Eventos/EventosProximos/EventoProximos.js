@@ -58,7 +58,6 @@ const EventoProximos = () => {
     <section className="container-fluid pl-0 pl-3 mt-3 mt-md-5">
       <div className="row">
         <div className="col-12 col-md-9 offset-0 offset-md-3 mt-5">
-          {" "}
           <h1 className="display-1 pl-0 pl-md-5">Próximos eventos</h1>
         </div>
       </div>
