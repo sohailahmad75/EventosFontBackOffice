@@ -5,8 +5,16 @@
   border-bottom-left-radius: 15px;
   padding: 0 0 100px 0;
   h1{
+    margin: 0;
+  }
+  .proximos-main__title{
     padding: 60px;
     margin: 0;
+    button{
+      &:focus{
+       box-shadow: none;
+      }
+    }
   }
 }
 .proximos-card-container{

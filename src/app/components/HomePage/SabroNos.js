@@ -2,8 +2,11 @@ import React from "react";
 
 const SabroNos = () => {
   return (
-    <section className="container pl-3 py-3 py-md-5 mt-3 mt-md-5">
-      <div className="container-fluid mt-2">
+    <section
+      className="container-fluid  pl-3 py-3 py-md-5 mt-3 mt-md-5"
+      style={{ background: "#f5f5f5" }}
+    >
+      <div className="container mt-2">
         <div className="row">
           <div className="col-12 col-sm-6 d-flex flex-column justify-content-end align-items-start">
             <h1 className="display-1 pl-0">Sobre nós</h1>

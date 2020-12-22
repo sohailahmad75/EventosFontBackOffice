@@ -4,6 +4,7 @@
 @import '~font-awesome/css/font-awesome.min.css';
 @import "utils/styles/scss/styles.scss";
 @import "utils/styles/scss/proximos-eventos";
+@import "utils/styles/scss/que-oferecemos-banner";
 //@font-face {
 //  font-family: TTNorms-Regular;
 //  src: url(../public/fonts/TTNorms-Regular.otf);
@@ -22,7 +23,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $body-color;
-  color: black;
+  color: $text-dark;
 }
 .theme-button {
   background-color: black;

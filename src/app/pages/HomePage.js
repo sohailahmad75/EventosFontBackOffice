@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import SabroNos from "../components/HomePage/SabroNos";
 import AppDownloadLink from "../components/HomePage/AppDownloadLink";
 import ProximosEvento from "../components/HomePage/ProximosEvento/ProximosEvento";
+import QueOferecemosBanner from "../components/HomePage/QueOferecemosBanner";
 
 const HomePage = () => {
   // const subHeading = `<div>No results.<br />Please try another search term.</div> `
@@ -19,7 +20,7 @@ const HomePage = () => {
       />
       <AppDownloadLink />
       <ProximosEvento />
-      {/*<QueOferecemosBanner />*/}
+      <QueOferecemosBanner />
       <SabroNos />
       <Footer />
     </div>
