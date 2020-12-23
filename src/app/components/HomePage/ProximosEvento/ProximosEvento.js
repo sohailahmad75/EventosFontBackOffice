@@ -1,51 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import SingleEventoCard from "./SingleEventoCard";
 import ScrollContainer from "react-indiana-drag-scroll";
-const ProximosEvento = () => {
-  const upComingEventsData = [
-    {
-      title: "ROta da Lampreia",
-      description:
-        "A prova que se realizará no próximo dia 01 de março, irá como no ano transato, contar para a Taça Regional do Centro.",
-      date: "12/11/2020",
-      image: "media/dummy-event1.png",
-    },
-    {
-      title: "Epic Sports",
-      description:
-        "A prova que se realizará no próximo dia 01 de março, irá como no ano transato, contar para a Taça Regional do Centro.",
-      date: "18/11/2020",
-      image: "media/dummy-event2.png",
-    },
-    {
-      title: "ROta da Lampreia",
-      description:
-        "A prova que se realizará no próximo dia 01 de março, irá como no ano transato, contar para a Taça Regional do Centro.",
-      date: "12/11/2020",
-      image: "media/dummy-event3.png",
-    },
-    {
-      title: "ROta da Lampreia",
-      description:
-        "A prova que se realizará no próximo dia 01 de março, irá como no ano transato, contar para a Taça Regional do Centro.",
-      date: "12/11/2020",
-      image: "media/dummy-event1.png",
-    },
-    {
-      title: "Epic Sports",
-      description:
-        "A prova que se realizará no próximo dia 01 de março, irá como no ano transato, contar para a Taça Regional do Centro.",
-      date: "18/11/2020",
-      image: "media/dummy-event2.png",
-    },
-    {
-      title: "ROta da Lampreia",
-      description:
-        "A prova que se realizará no próximo dia 01 de março, irá como no ano transato, contar para a Taça Regional do Centro.",
-      date: "12/11/2020",
-      image: "media/dummy-event3.png",
-    },
-  ];
+import Link from "@material-ui/core/Link";
+const ProximosEvento = ({ upComingEventsData, heading = "Eventos" }) => {
   let navRef = useRef();
   const [upcomingEvents, setUpcomingEvents] = useState([]);
   const loadUpcomingEvents = () => {

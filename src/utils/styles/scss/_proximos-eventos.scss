@@ -4,16 +4,20 @@
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   padding: 0 0 100px 0;
-  h1{
+  .heading-area{
     padding: 60px;
     margin: 0;
+    a {
+      color: white;
+      cursor: pointer;
+    }
   }
 }
 .proximos-card-container{
   display: grid;
   grid-template-columns: repeat(6, 275px);
   grid-auto-flow:column;
-  grid-column-gap: 90px;
+  grid-column-gap: 100px;
   color: $text-dark;
   margin-left: -100px;
 }
