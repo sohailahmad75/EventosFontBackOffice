@@ -8,7 +8,50 @@ import ProximosEvento from "../components/HomePage/ProximosEvento/ProximosEvento
 import QueOferecemosBanner from "../components/HomePage/QueOferecemosBanner";
 
 const HomePage = () => {
-  // const subHeading = `<div>No results.<br />Please try another search term.</div> `
+  const upComingEventsData = [
+    {
+      title: "Rota da Lampreia",
+      description:
+        "A prova que se realizará no próximo dia 01 de março, irá como no ano transato, contar para a Taça Regional do Centro.",
+      date: "12/11/2020",
+      image: "media/dummy-event1.png",
+    },
+    {
+      title: "Epic Sports",
+      description:
+        "A prova que se realizará no próximo dia 01 de março, irá como no ano transato, contar para a Taça Regional do Centro.",
+      date: "18/11/2020",
+      image: "media/dummy-event2.png",
+    },
+    {
+      title: "ROta da Lampreia",
+      description:
+        "A prova que se realizará no próximo dia 01 de março, irá como no ano transato, contar para a Taça Regional do Centro.",
+      date: "12/11/2020",
+      image: "media/dummy-event3.png",
+    },
+    {
+      title: "ROta da Lampreia",
+      description:
+        "A prova que se realizará no próximo dia 01 de março, irá como no ano transato, contar para a Taça Regional do Centro.",
+      date: "12/11/2020",
+      image: "media/dummy-event1.png",
+    },
+    {
+      title: "Epic Sports",
+      description:
+        "A prova que se realizará no próximo dia 01 de março, irá como no ano transato, contar para a Taça Regional do Centro.",
+      date: "18/11/2020",
+      image: "media/dummy-event2.png",
+    },
+    {
+      title: "ROta da Lampreia",
+      description:
+        "A prova que se realizará no próximo dia 01 de março, irá como no ano transato, contar para a Taça Regional do Centro.",
+      date: "12/11/2020",
+      image: "media/dummy-event3.png",
+    },
+  ];
   return (
     <div className="home-page">
       <Header />
@@ -19,7 +62,7 @@ const HomePage = () => {
         bannerImage="media/Group-516.svg"
       />
       <AppDownloadLink />
-      <ProximosEvento />
+      <ProximosEvento upComingEventsData={upComingEventsData} heading={'Próximos eventos'}/>
       <QueOferecemosBanner />
       <SabroNos />
       <Footer />

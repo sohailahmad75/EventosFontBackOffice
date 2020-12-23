@@ -1,51 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import SingleEventoCard from "./SingleEventoCard";
 import ScrollContainer from "react-indiana-drag-scroll";
-const ProximosEvento = () => {
-  const upComingEventsData = [
-    {
-      title: "ROta da Lampreia",
-      description:
-        "A prova que se realizará no próximo dia 01 de março, irá como no ano transato, contar para a Taça Regional do Centro.",
-      date: "12/11/2020",
-      image: "media/dummy-event1.png",
-    },
-    {
-      title: "Epic Sports",
-      description:
-        "A prova que se realizará no próximo dia 01 de março, irá como no ano transato, contar para a Taça Regional do Centro.",
-      date: "18/11/2020",
-      image: "media/dummy-event2.png",
-    },
-    {
-      title: "ROta da Lampreia",
-      description:
-        "A prova que se realizará no próximo dia 01 de março, irá como no ano transato, contar para a Taça Regional do Centro.",
-      date: "12/11/2020",
-      image: "media/dummy-event3.png",
-    },
-    {
-      title: "ROta da Lampreia",
-      description:
-        "A prova que se realizará no próximo dia 01 de março, irá como no ano transato, contar para a Taça Regional do Centro.",
-      date: "12/11/2020",
-      image: "media/dummy-event1.png",
-    },
-    {
-      title: "Epic Sports",
-      description:
-        "A prova que se realizará no próximo dia 01 de março, irá como no ano transato, contar para a Taça Regional do Centro.",
-      date: "18/11/2020",
-      image: "media/dummy-event2.png",
-    },
-    {
-      title: "ROta da Lampreia",
-      description:
-        "A prova que se realizará no próximo dia 01 de março, irá como no ano transato, contar para a Taça Regional do Centro.",
-      date: "12/11/2020",
-      image: "media/dummy-event3.png",
-    },
-  ];
+import Link from "@material-ui/core/Link";
+const ProximosEvento = ({ upComingEventsData, heading = "Eventos" }) => {
   let navRef = useRef();
   const [upcomingEvents, setUpcomingEvents] = useState([]);
   const loadUpcomingEvents = () => {
@@ -69,11 +26,10 @@ const ProximosEvento = () => {
   return (
     <section className="container-fluid pl-0 pl-3 mt-3 mt-md-5">
       <div className="row ">
-        <div className="col-12 col-md-9 offset-0 offset-md-3 mt-5 proximos-main-container">
-          {" "}
+        <div className="col-12 col-md-10 offset-0 offset-md-2 mt-5 proximos-main-container">
           <div className="row m-0 align-items-end proximos-main__title">
-            <h1 className="display-1 col-6">Próximos eventos</h1>
-            <div className="col-6 d-flex justify-content-end">
+            <h1 className="display-1 col-9">{heading}</h1>
+            <div className="col-3 d-flex justify-content-end">
               <button className="btn btn-text btn-sm mb-2">
                 VER MAIS <i className="ml-1 fa fa-angle-right" />
               </button>

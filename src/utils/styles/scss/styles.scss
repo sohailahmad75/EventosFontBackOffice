@@ -4,7 +4,7 @@
   border-left: 2px solid white;
 }
 .login-container{
-    margin-top: 8%;
+    margin-top: 15%;
     margin-bottom: 4%;
     color: $dark-grey;
     font-size: 14px;
@@ -12,7 +12,7 @@
         border-left: 4px solid black;
     }
     .heading-underline {
-        border-bottom: 2px solid black;
+        border-bottom: 3px solid black;
     }
     .back-btn {
         margin: 175px 0px 0px 90px;
@@ -42,15 +42,19 @@
     }
   }
   .user-info-input {
-    background-color: #f3f3f3;
-    border-radius: 3px;
-    margin: 0px 2px;
-    input {
-      border: none;
-      background: transparent;
-      padding: 0px;
-      font-size: small;
-      color: black;
+    background-color: $island-white-dark;
+    border-radius: 8px;
+    margin: 0;
+    padding-top: 12px!important;
+    .form-input {
+      .MuiInput-underline {
+        &:before {
+          border: transparent;
+        }
+        &:after {
+          border: transparent;
+        }
+      }
     }
   }
     @media only screen and (max-width: 768px) {
@@ -164,5 +168,12 @@
     &:hover{
       opacity: 0.8;
     }
+  }
+}
+.sub-sec {
+  .two-inputs-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
   }
 }
