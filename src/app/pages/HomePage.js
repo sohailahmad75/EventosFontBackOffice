@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import SabroNos from "../components/HomePage/SabroNos";
 import AppDownloadLink from "../components/HomePage/AppDownloadLink";
 import ProximosEvento from "../components/HomePage/ProximosEvento/ProximosEvento";
+import QueOferecemosBanner from "../components/HomePage/QueOferecemosBanner";
 
 const HomePage = () => {
   const upComingEventsData = [
@@ -61,11 +62,8 @@ const HomePage = () => {
         bannerImage="media/Group-516.svg"
       />
       <AppDownloadLink />
-      <ProximosEvento
-        upComingEventsData={upComingEventsData}
-        heading={"Próximos eventos"}
-      />
-      {/*<QueOferecemosBanner />*/}
+      <ProximosEvento upComingEventsData={upComingEventsData} heading={'Próximos eventos'}/>
+      <QueOferecemosBanner />
       <SabroNos />
       <Footer />
     </div>

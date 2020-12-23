@@ -4,12 +4,16 @@
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   padding: 0 0 100px 0;
-  .heading-area{
+  h1{
+    margin: 0;
+  }
+  .proximos-main__title{
     padding: 60px;
     margin: 0;
-    a {
-      color: white;
-      cursor: pointer;
+    button{
+      &:focus{
+       box-shadow: none;
+      }
     }
   }
 }
