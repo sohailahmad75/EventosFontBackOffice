@@ -73,6 +73,30 @@
       }
     }
 }
+.contactosform {
+  .user-info-input {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 8px;
+    margin: 0;
+    padding-top: 12px!important;
+    .form-input {
+      .MuiInput-underline {
+        &:before {
+          border: transparent;
+        }
+        &:after {
+          border: transparent;
+        }
+      }
+      .MuiInputLabel-formControl, .MuiInput-input {
+        color: $white;
+      }
+      .Mui-error {
+        color: red!important;
+      }
+    }
+  }
+}
 .header-sec {
   position: fixed;
   width: 100%;
@@ -175,5 +199,15 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+  }
+}
+.contactos-sec {
+  ._underline_heading {
+    border-bottom: 3px solid white;
+  }
+}
+.proximos-eventos {
+  .MuiFilledInput-root {
+    background: white;
   }
 }

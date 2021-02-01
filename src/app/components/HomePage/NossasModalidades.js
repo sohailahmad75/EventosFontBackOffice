@@ -3,7 +3,7 @@ import BikeIcon from "../svgs/BikeIcon";
 import WalkIcon from "../svgs/WalkIcon";
 import ScrollContainer from "react-indiana-drag-scroll";
 
-const QueOferecemosBanner = () => {
+const NossasModalidades = () => {
   return (
     <section className="container-fluid pl-3 mt-5 py-3 py-md-5">
       <div className="d-flex justify-content-center">
@@ -35,4 +35,4 @@ const QueOferecemosBanner = () => {
   );
 };
 
-export default QueOferecemosBanner;
+export default NossasModalidades;
