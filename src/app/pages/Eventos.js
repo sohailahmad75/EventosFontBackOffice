@@ -119,10 +119,15 @@ const Eventos = () => {
         bannerBgImage={"media/home-banner.png"}
         mainHeading={"Eventos \npassados"}
       />
-      {dataByYears &&
-        dataByYears.map((singleEvent) => {
-          <EventosByYear />;
-        })}
+      {dataByYears.map((singleEvent) => (
+        <EventosByYear
+          title={singleEvent.title}
+          cardsData={singleEvent.cardsData}
+          heading={singleEvent.heading}
+          linkHref={singleEvent.linkHref}
+          linkText={singleEvent.linkText}
+        />
+      ))}
       <Footer />
     </div>
   );

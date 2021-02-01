@@ -1,3 +1,4 @@
+@import "utils/styles/scss/fonts";
 @import "utils/styles/scss/variables";
 @import "utils/styles/scss/mixins";
 @import "~bootstrap/scss/bootstrap";
@@ -5,6 +6,9 @@
 @import "utils/styles/scss/styles.scss";
 @import "utils/styles/scss/proximos-eventos";
 @import "utils/styles/scss/que-oferecemos-banner";
+
+
+
 //@font-face {
 //  font-family: TTNorms-Regular;
 //  src: url(../public/fonts/TTNorms-Regular.otf);
@@ -19,7 +23,7 @@
 //}
 html, body {
   margin: 0;
-  font-family: 'TTNorms-Regular', 'TTNorms-Light', 'TTNorms-Bold', sans-serif;
+  font-family: 'TTNorms';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $body-color;
@@ -65,9 +69,9 @@ a {
     }
   }
   .small-card-img-top {
-   
+
     height: 150px;
-  
+
   }
   .card-body{
     padding: 1rem;
@@ -75,4 +79,7 @@ a {
       font-size: 14px;
     }
   }
+}
+.display-1{
+  font-weight: 600;
 }

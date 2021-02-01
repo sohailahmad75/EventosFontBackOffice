@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "TTNorms";
+  font-weight: 300;
+  src: local('TTNorms-Light'), url("../../../app/assets/fonts/TTNorms-Light.otf") format("opentype")
+}
+
+@font-face {
+  font-family: "TTNorms";
+  font-weight: normal;
+  src: local('TTNorms-Regular'), url("../../../app/assets/fonts/TTNorms-Regular.otf") format("opentype")
+}
+@font-face {
+  font-family: "TTNorms";
+  font-weight: 600;
+  src: local('TTNorms-Medium'), url("../../../app/assets/fonts/TTNorms-Medium.otf") format("opentype")
+}
+@font-face {
+  font-family: "TTNorms";
+  font-weight: 900;
+  src: local('TTNorms-Bold'), url('../../../app/assets/fonts/TTNorms-Bold.otf') format("opentype")
+}
