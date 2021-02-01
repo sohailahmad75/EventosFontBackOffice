@@ -1,43 +1,36 @@
 import React from "react";
-import TextField from "@material-ui/core/TextField";
-import { makeStyles } from "@material-ui/core/styles";
-import Input from "@material-ui/core/Input";
-import InputLabel from "@material-ui/core/InputLabel";
-import InputAdornment from "@material-ui/core/InputAdornment";
-import FormControl from "@material-ui/core/FormControl";
-import Grid from "@material-ui/core/Grid";
+import ContactosForm from "./ContactosForm";
 const Contactos = () => {
-  const useStyles = makeStyles((theme) => ({
-    margin: {
-      margin: theme.spacing(1),
-    },
-  }));
-  const classes = useStyles();
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-6 offset-3">
-          <div className="row">
-            <div className="w-50 m-2">
-              <div className={classes.margin}>
-                <Grid container spacing={1} alignItems="flex-end">
-                  <Grid item>
-                    <img src="media/http_icon_gray.png" alt="" />
-                  </Grid>
-                  <Grid item>
-                    <Input
-                      id="input-with-icon-grid"
-                      disableUnderline={true}
-                      placeholder="Site"
-                    />
-                  </Grid>
-                </Grid>
+    <section className="container-fluid pl-0 pl-3 mt-3 mt-md-5 contactos-sec">
+      <div className="row ">
+        <div className="col-12 col-md-10 offset-0 offset-md-2 mt-5 proximos-main-container ">
+          <div className="container-fluid ">
+            <div className="row _inner-container">
+              <div className="col-12 col-md-4 d-none d-md-block">
+                <img
+                  src="media/Group-647.png"
+                  width="100%"
+                  height="100%"
+                  alt="imhgg"
+                />
+              </div>
+              <div className="col-12 col-md-8">
+                <div className="proximos-main__title">
+                  <h1 className="display-1 col-9">Contactos</h1>
+                  <div className="_underline_heading mt-3 pb-1 mb-3 pl-2 font-weight-bold">
+                    Câmara Municipal de Penacova
+                  </div>
+                  <div className="contactosform">
+                    <ContactosForm />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

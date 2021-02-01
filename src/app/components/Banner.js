@@ -24,7 +24,7 @@ const Banner = ({
           className="container d-flex flex-column justify-content-end h-100 pb-3 pb-md-5 "
           style={{
             background: bannerImage ? `url(${bannerImage})` : ``,
-            backgroundSize: "620px 100%",
+            backgroundSize: "550px 100%",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "bottom right",
           }}

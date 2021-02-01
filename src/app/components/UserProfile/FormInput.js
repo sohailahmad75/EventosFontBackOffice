@@ -22,6 +22,7 @@ const FormInput = ({
   placeholder,
   type = "text",
   required = true,
+  rows = 1,
 }) => (
   <Field name={name}>
     {({ field, form: { touched, errors } }) => (
@@ -49,6 +50,7 @@ const FormInput = ({
                 InputLabelProps={{
                   shrink: true,
                 }}
+                rows={4}
               />
             </Grid>
           </Grid>
