@@ -6,7 +6,7 @@
 @import "utils/styles/scss/styles.scss";
 @import "utils/styles/scss/proximos-eventos";
 @import "utils/styles/scss/que-oferecemos-banner";
-
+@import "utils/styles/scss/calendar-view";
 
 
 //@font-face {
@@ -80,6 +80,6 @@ a {
     }
   }
 }
-.display-1{
+.display-1, .display-3{
   font-weight: 600;
 }

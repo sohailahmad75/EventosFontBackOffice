@@ -8,6 +8,7 @@ const Register = lazy(() => import("./pages/Register"));
 const Eventos = lazy(() => import("./pages/Eventos"));
 const Sobre = lazy(() => import("./pages/Sobre"));
 const EventDetail = lazy(() => import("./pages/EventDetail"));
+const EventRegister = lazy(() => import("./pages/EventRegister"));
 const Routes = () => {
   return (
     <Suspense fallback={<Spinner />}>
@@ -19,6 +20,7 @@ const Routes = () => {
         <Route path="/eventos" component={Eventos} exact />
         <Route path="/sobre" component={Sobre} exact />
         <Route path="/eventdetail" component={EventDetail} exact />
+        <Route path="/event-register" component={EventRegister} exact />
         {/*<Route path="/home" component={HomePage} exact />*/}
         <Redirect to="/" />
       </Switch>
