@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
 import EventDetailsItem from "../components/EventDetailsItem";
+import CalenderView from "../components/Calender/CalenderView";
 
-const EventDetail = () => {
+const EventRegister = () => {
   const singleItem = {
     title: "Rota da Lampreia",
     date: "12/11/2020",
@@ -31,12 +30,13 @@ const EventDetail = () => {
   }, []);
   return (
     <div>
-      <Header headerTextColor="#000" />
-      {console.log("itemData", itemData)}
-      <EventDetailsItem item={itemData} />
-      <Footer />
+      <Header headerTextColor="#0D0E0E" headerTitle="EvenTU" />
+      <div className="pt-5">
+        <EventDetailsItem item={itemData} />
+      </div>
+      <CalenderView />
     </div>
   );
 };
 
-export default EventDetail;
+export default EventRegister;

@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const Header = ({ headerTextColor = "#fff" }) => {
+const Header = ({
+  headerTextColor = "#fff",
+  headerTitle = "Eventos desportivos de Penacova",
+}) => {
   const [scrolled, setScrolled] = React.useState(false);
   const handleScroll = () => {
     if (window) {
@@ -29,8 +32,8 @@ const Header = ({ headerTextColor = "#fff" }) => {
     >
       <header className="container">
         <nav className="header-tabs row d-flex justify-content-between">
-          <Link to="/" className="col-12 col-md-7 col-lg-8">
-            Eventos desportivos de Penacova
+          <Link to="/" className="col-12 col-md-7 col-lg-8 header-title">
+            {headerTitle}
           </Link>
           <div className="d-flex col-12 col-md-5 col-lg-4 justify-content-between">
             <Link to="/eventos">Eventos</Link>
